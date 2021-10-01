@@ -1,10 +1,10 @@
 from Datos import *
 class Cifrado(Datos):
-    def __init__(self, palabra, clave, abc):
+    d1 = Datos.abc
+    def __init__(self, palabra, clave):
         self.palabra = palabra
         self.clave = clave
-        self.abc = abc
-        super().__init__(palabra, clave, abc)
+        super().__init__(clave, palabra)
 
     def cifrar(self):
         for i in range(len(self.palabra)):
