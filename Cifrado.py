@@ -5,14 +5,21 @@ class Cifrado(Datos):
         self.palabra = palabra
         self.clave = clave
         super().__init__(clave, palabra)
+        self.resultado = ""
 
     def cifrar(self):
-        resultado = ''
         for i in self.palabra:
             for j in self.abc:
                 if i in j:
-                    resultado += self.abc[(self.abc.index(j)+self.clave)% len(self.abc)]
-        return resultado
+                    self.resultado += self.abc[(self.abc.index(j)+self.clave)% len(self.abc)]
+        return self.resultado
+
+    def descifrar(self):
+        for i in self.palabra:
+            for j in self.abc:
+                if i in j:
+                    self.resultado += self.abc[(self.abc.index(j)-self.clave)% len(self.abc)]
+        return self.resultado
 
 
 
