@@ -1,7 +1,7 @@
 from Cifrado import *
 op = 0
 while op != 3:
-    op = int(input('Que desea hacer? \n1.- Cifrar\n2.- Descifrar\n3.- Salir'))
+    op = int(input('Que desea hacer? \n1.- Cifrar\n2.- Descifrar\n3.- Salir\nEscoger.- '))
     if op == 1:
         palabra = input("Agregar palabra a cifrar: ")
         clave = int(input('Agrega la clave: '))
