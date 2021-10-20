@@ -12,3 +12,4 @@ while op != 3:
         clave = int(input('Agrega la clave: '))
         c1 = Cifrado(palabra, clave)
         print(f'Tu palabra cifrada es: {c1.descifrar()}')
+print('hasta aqui acaba el programa, adios')
